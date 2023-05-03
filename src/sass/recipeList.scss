@@ -1,0 +1,54 @@
+@import "./base";
+
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+  list-style: none;
+  width: 100%;
+  min-height: 77rem;
+  background-color: white;
+}
+
+.pagination {
+  margin-top: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &__btn {
+    &--prev,
+    &--next {
+      background-color: $mainColor;
+      color: white;
+      padding: 2px 12px;
+      margin: 20px 0 0 70px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 2px 2px 4px #918581;
+    }
+  }
+}
+
+.copyright {
+  color: #918581;
+  font-size: 1.2rem;
+  padding: 0 3.5rem;
+  margin-top: 4rem;
+
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: #918581;
+  }
+}

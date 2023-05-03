@@ -1,0 +1,24 @@
+@import "./sass/base.scss";
+.logo {
+  color: rgb(81, 81, 241);
+}
+
+.container {
+  // padding: 20px;
+  width: 100%;
+  background-color: rgb(242, 248, 253);
+  min-height: 117rem;
+}
+.box {
+  // border: 1px solid blue;
+  min-height: 100rem;
+  font-size: 1rem;
+  width: 100%;
+  background-color: $color-grey-light-1;
+}
+// .receipe_name {
+//   border: 1px solid blue;
+//   min-height: 50px;
+//   font-size: 1rem;
+//   width: 100%;
+// }

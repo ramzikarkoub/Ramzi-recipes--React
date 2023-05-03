@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { Header } from "./Components/Header/Header";
+import RecipeList from "./Components/recipeList/RecipeList";
+
+import "./sass/main.scss";
+import { SearchProvider } from "./helper/context";
+import SelectedRecipe from "./Components/SelectedRecipe/SelectedRecipe";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SearchProvider className="App">
+      <div className="container">
+        <Header />
+        <div className="row  col-12">
+          <div className="col-md-4 col-12 g-2">
+            <div className="receipes d-flex flex-column">
+              <RecipeList />
+            </div>
+          </div>
+
+          <div className="col-md-8 col-12 g-2">
+            <div className="box">
+              <SelectedRecipe />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="container">
+        <Header />
+        <RecipeList />
+        <SelectedRecipe />
+      </div> */}
+    </SearchProvider>
   );
 }
 
