@@ -2,7 +2,6 @@ import "./App.scss";
 import { Header } from "./Components/Header/Header";
 import RecipeList from "./Components/recipeList/RecipeList";
 
-import "./sass/main.scss";
 import { SearchProvider } from "./helper/context";
 import SelectedRecipe from "./Components/SelectedRecipe/SelectedRecipe";
 
