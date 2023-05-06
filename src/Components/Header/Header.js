@@ -15,10 +15,8 @@ export const Header = () => {
         `${process.env.REACT_APP_API_URL}/?search=${searchValue}&key=${process.env.REACT_APP_API_KEY}`
       ).then((result) =>
         result.json().then((res) => {
-          console.log(res);
           setResults(res);
           setIsLoading(false);
-          console.log(process.env);
         })
       );
     }, 500);
@@ -36,7 +34,6 @@ export const Header = () => {
           onChange={(e) => {
             e.preventDefault();
             setSearchValue(e.target.value); //change
-            console.log(searchValue);
             setIsLoading(true);
           }}
           onKeyPress={(e) => {

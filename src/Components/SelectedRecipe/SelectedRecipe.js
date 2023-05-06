@@ -61,7 +61,6 @@ const SelectedRecipe = () => {
     }
   }
 
-  console.log(bookmarked);
   useEffect(() => {
     // add bookmark to local storage everytime bookmarked is changed
     localStorage.setItem("bookmarked", JSON.stringify(bookmarked));

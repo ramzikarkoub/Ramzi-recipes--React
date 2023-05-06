@@ -5,7 +5,6 @@ import Recipe from "../recipe/Recipe";
 
 const Bookmarks = () => {
   const { bookmarked } = useContext(SearchContext);
-  console.log(bookmarked);
   return (
     <>
       <li className="bookmark">
