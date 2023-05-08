@@ -86,7 +86,7 @@ const RecipeList = () => {
           rel="noreferrer"
           className="twitter-link"
           target="_blank"
-          href="https://twitter.com/jonasschmedtman"
+          href="https://github.com/ramzikarkoub"
         >
           Ramzi Karkoub
         </a>
