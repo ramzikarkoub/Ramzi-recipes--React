@@ -19,3 +19,5 @@ Styling Excellence: We employed Sass to achieve advanced styling, ensuring that 
 Recipe Data: Utilizing JSON and APIs, we've expanded the app's recipe database, providing a wealth of culinary inspiration to users.
 
 Component Reusability: Thanks to React's modular structure, we've achieved component reusability, making development and maintenance more efficient.
+
+Lazy loading: an ingenious technique that ensures our website loads quickly, providing you with an uninterrupted viewing experience. 
